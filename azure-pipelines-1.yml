@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo "Starting build process..."
+  displayName: 'Start'
+
+- script: cat index.html
+  displayName: 'Display HTML File'
+
+- script: echo "Build completed successfully 🚀"
+  displayName: 'End'
